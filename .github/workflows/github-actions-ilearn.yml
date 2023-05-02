@@ -1,0 +1,14 @@
+name: my first github actions 
+
+on: push
+
+jobs:
+  myfirst-github-actions:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: echo test
+        run: echo "hello github actions"
+      - name: multi script
+        run: |
+          node -v
+          npm -v
