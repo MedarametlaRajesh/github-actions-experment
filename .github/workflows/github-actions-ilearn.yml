@@ -4,7 +4,7 @@ on: push
 
 jobs:
   myfirst-github-actions:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - name: echo test
         run: echo "hello github actions"
@@ -12,3 +12,4 @@ jobs:
         run: |
           node -v
           npm -v
+       
