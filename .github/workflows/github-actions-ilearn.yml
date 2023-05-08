@@ -1,15 +1,14 @@
-name: my first github actions 
+name: first action
 
 on: push
 
 jobs:
-  myfirst-github-actions:
+  commit:
     runs-on: ubuntu-latest
     steps:
-      - name: echo test
-        run: echo "hello github actions"
-      - name: multi script
+      - name: step 1
         run: |
-          node -v
-          npm -v
-       
+          echo " Hello Github actions"
+          pwd
+          ls -a
+          echo "$ {{github}}" 
