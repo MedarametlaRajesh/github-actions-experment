@@ -11,4 +11,4 @@ jobs:
           echo " Hello Github actions"
           pwd
           ls -a
-          echo "$ {{github}}" 
+          echo "${{github}}" 
