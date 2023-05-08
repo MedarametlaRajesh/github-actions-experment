@@ -11,5 +11,5 @@ jobs:
           echo " Hello Github actions"
           pwd
           ls -a
-          echo " toJson(${{ github }})" 
+          echo " ${{ toJson(github) }}" 
       
