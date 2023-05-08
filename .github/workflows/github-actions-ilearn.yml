@@ -1,10 +1,11 @@
 name: first action
-
+run-name: run-name-First action
 on: push
-
 jobs:
+
   commit:
     runs-on: ubuntu-latest
+    timeout-minutes: 
     steps:
       - name: step 1
         run: |
