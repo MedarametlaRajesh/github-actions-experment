@@ -13,4 +13,13 @@ jobs:
           pwd
           ls -a
           echo " ${{ toJson(github) }}" 
+      - name: Node default version
+        run: |
+          node -v
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: Node version after setup node
+        run: |
+          node -v     
       
