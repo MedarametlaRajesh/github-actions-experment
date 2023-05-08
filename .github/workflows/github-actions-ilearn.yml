@@ -12,3 +12,4 @@ jobs:
           pwd
           ls -a
           echo "${{github}}" 
+          echo "$github"
