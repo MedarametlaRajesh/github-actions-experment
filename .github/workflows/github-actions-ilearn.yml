@@ -4,6 +4,9 @@ on: push
 jobs:
 
   commit:
+    strategy:
+      matrix:
+        node-version: [8,10,12]
     runs-on: ubuntu-latest
     timeout-minutes: 360
     steps:
@@ -18,7 +21,7 @@ jobs:
           node -v
       - uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: ${{ matrix.node-version}}
       - name: Node version after setup node
         run: |
           node -v     
