@@ -1,4 +1,4 @@
-name: first action
+name: ${{ github.actor }} is testing out GitHub Actions 🚀
 run-name: run-name-First action
 on: push
 jobs:
